@@ -1,0 +1,148 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    margin: 0;
+    font-family :Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #926239;
+    line-height: 1.6;
+}
+#showcase{
+    background-image:url("casestudy.jpg");
+    height: 800px;
+    background-size: cover;
+    background: position center 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#showcase h1{
+    font-size: 100px;
+    /* color: black; */
+    background:  -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#showcase h4{
+    cursor: pointer;
+    text-shadow: -2px 4px 19px chocolate;
+    color: white;
+}
+#showcase h2{
+    font-size: 25px;
+    color: #ffcc99;
+
+}
+#showcase.a{
+    font-size: 100px;
+    text-decoration: none;
+    color: #926239;
+    border: #926239 1px solid;
+    padding: 10px 20px;
+   
+}
+#Myclockdisplay{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color :lightsalmon ;
+    text-align: center;
+    align-items: center;
+}
+#Myclockdisplay{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    animation-name: time;
+    
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    font-family: 'Rubik', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+}
+@keyframes time{
+    0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+#add{
+    font-family: inherit;
+ font-size: 20px;
+ background: royalblue;
+ color: white;
+ padding: 0.7em 1em;
+ padding-left: 0.9em;
+ display: flex;
+ align-items: center;
+ border: none;
+ border-radius: 16px;
+ overflow: hidden;
+ transition: all 0.2s;
+ display: block;
+ margin-left: 0.3em;
+ transition: all 0.3s ease-in-out;
+ cursor: pointer;
+}
+  #add:hover{
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    transform: translateX(5em);
+    
+  }
+#add:active {
+    transform: scale(0.95);
+   }
+
+
+#thing{
+    background:  -webkit-linear-gradient(#ff0000, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    justify-content:left;
+    align-items: left;
+    justify-content: left;
+    align-items: left;
+}
+.thingtodo{
+    align-self: start;
+    margin: 10px 20px;
+}
+#textbox{
+    padding-left: 10px;
+    border-radius: 50px;
+    height: 30px;
+    position: relative;
+    border: 2px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .14);
+    background-color: AliceBlue;
+    font-size: 20px;
+}
+/* #showcase::after{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+} */
+#viewmore{
+    border-radius: 50px;
+    background: royalblue;
+    border: 1px solid black;
+    font-size: 20px;
+    color: orange;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
